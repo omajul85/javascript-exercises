@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/application.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="/javascripts/support.js"></script>
+    <script src="/javascripts/application.js"></script>
+    <title>Motivational Posters by omajul</title>
+</head>
+<body>
+    <header>
+        <h1>Motivational Posters</h1>
+    </header>
+    
+    <section id="select-image">
+        <h2>Step1. Select an image</h2>
+        <p>Enter the keyword to search for images</p>
+        <form id="search-form">
+            <input id="search-term" type="text">
+            <input type="submit" value="Go!">
+        </form>
+        <div id="search-results"></div>
+        <div id="google-branding"></div>
+    </section>
+    
+    <section id="add-text">
+        <h2>Step 2. Add text</h2>
+        <input id="caption-text" type="text" value="Add some text to your poster">
+    </section>
+    
+    <section id="style-caption">
+        <h2>Step 3. Style it!</h2>
+        <div id="workspace">
+            <p id="caption"></p>
+        </div>
+        <div id="caption-controls">
+            Left: <input id="caption-left" type="number" value="10">
+            Top: <input id="caption-top" type="number" value="10">
+            Width: <input id="caption-width" type="number" value="400">
+            Size: <input id="caption-size" type="number" value="32">
+            Color: <select id="caption-colour">
+                <option>red</option>
+                <option>green</option>
+                <option>white</option>
+                <option>black</option>
+                <option>blue</option>
+                <option>yellow</option>
+                <option>gray</option>
+                <option>orange</option>
+            </select>
+            Align: <select id="caption-align">
+                <option>left</option>
+                <option>center</option>
+                <option>right</option>
+            </select>
+        </div>
+    </section>
+    
+    <footer>
+        <div id="footer">
+            <a href="http://www.makersacademy.com/" target="_blank"><img src="http://assets.makersacademy.com/images/logo/ma-wordmark-red.png"></a>
+            <div>
+              I built this with help from
+              <a href="http://www.makersacademy.com" target="_blank">Makers Academy</a>, a selective web development bootcamp in London.
+            </div>
+            <div>
+              This page uses Google Image search, Ruby, Sinatra, Javascript, jQuery, HTML and CSS.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
