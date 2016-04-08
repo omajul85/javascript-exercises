@@ -43,10 +43,10 @@ Game.prototype = {
     }
 };
 
-var g = new Game();
-g.roll(5);
-g.roll(5);
-for (var i = 0; i < 18; i++) {
-    g.roll(0);
-}
-document.getElementById("demo").innerHTML = g.score();
+// var g = new Game();
+// g.roll(5);
+// g.roll(5);
+// for (var i = 0; i < 18; i++) {
+//     g.roll(0);
+// }
+// document.getElementById("demo").innerHTML = g.score();
