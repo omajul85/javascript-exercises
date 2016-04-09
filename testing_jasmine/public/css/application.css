@@ -33,3 +33,13 @@ footer img {
 footer div {
     margin: 10px 0;
 }
+
+#score-in-frame {
+    text-align: center;
+}
+
+#totalScore {
+    color: red;
+    position: relative;
+    font-size: 26px;
+}

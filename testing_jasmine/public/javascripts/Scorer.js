@@ -70,7 +70,7 @@ Scorer.prototype = {
                 }
                 break;
         }
-        // console.log(this.totalScore);
+        console.log(this.totalScore);
         return this.frameScores;
     },
     frameNumber: function(){
