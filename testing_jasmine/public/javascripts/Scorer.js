@@ -73,29 +73,10 @@ Scorer.prototype = {
         console.log(this.totalScore);
         return this.frameScores;
     },
-    frameNumber: function(){
-        if (this.frameScores.length == this.lastFrameNumber) {
-            return (this.lastFrameNumber + 1);
-        } else if (this.rollingFrame > this.lastFrameNumber) {
-            return this.lastFrameNumber;
-        } else {
-            return this.rollingFrame;
-        }
-    },
     addScoreInFrame: function(value){
         if (this.frameScores.length < this.lastFrameNumber) {
             this.totalScore += value;
             this.frameScores.push(this.totalScore);
         }  
-    },
-    gameIsOver: function(){
-        return (this.frameNumber() > this.lastFrameNumber);  
     }
 };
-
-// var s = new Scorer();
-// for (var i = 0; i < 20; i++) {
-//     s.roll(1);
-// }
-// document.getElementById("rolls").innerHTML = s.rolls;
-// document.getElementById("total-score").innerHTML = s.totalScore;

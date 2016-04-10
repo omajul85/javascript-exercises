@@ -10,7 +10,7 @@ $(document).ready(function(){
     $("#frame-number").text(g.frameNumber());
     $("#balls-rolled").text(g.player.score.rolls);
     $("#rolling-frame").text(g.player.score.rollingFrame);
-    $("#total-score").text(g.player.score.totalScore);
+    $("#totalScore").text(g.player.score.totalScore);
     $("#first-ball").text(g.player.score.firstBallInFrame);
     $("#game-over").text(g.gameIsOver());
     $(":button").click(function(){
@@ -20,7 +20,7 @@ $(document).ready(function(){
         $("#frame-number").text(g.frameNumber());
         $("#balls-rolled").text(g.player.score.rolls);
         $("#rolling-frame").text(g.player.score.rollingFrame);
-        $("#total-score").text(g.player.score.totalScore);
+        $("#totalScore").text(g.player.score.totalScore);
         $("#first-ball").text(g.player.score.firstBallInFrame);
         $("#game-over").text(g.gameIsOver());
     });
@@ -38,7 +38,7 @@ function buttons(pins) {
     var buttonHTML = '';
     for (var i = 0; i < (11 - pins); i++) {
         // buttonHTML += '<button type="button" class="btn btn-primary" onclick="press(' + i + ')">' + i + '</button>';
-        buttonHTML += '<button type="button" class="btn btn-primary" value="' + i + '">' + i + '</button>';
+        buttonHTML += '<button type="button" class="btn-round" value="' + i + '">' + i + '</button>';
     }
     console.log(buttonHTML);
     $('#buttons').html(buttonHTML);

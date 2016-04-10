@@ -1,6 +1,7 @@
 body {
-    background-image: url(/images/bg.png);
-    font-family: Helvetica, Arial;
+    background-image: url(/images/bowling.jpg);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -8,14 +9,17 @@ header {
     box-shadow: 1px 0 3px rgba(0,0,0, 0.3);
     background-image: url(/images/darth_stripe.png);
     color: white;
-    font-size: 26px;
+    font-family: 'Lobster', cursive;
 }
 
 footer {
-    background-color: rgba(255,0,255,0.01);
-    padding: 10px;
+    background-image: url(/images/bg.png);
+    padding: 15px;
     text-align: left;
     font-size: 12px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer {
@@ -39,7 +43,50 @@ footer div {
 }
 
 #totalScore {
-    color: red;
+    color: #CDDC39;
     position: relative;
-    font-size: 26px;
+    font-size: 40px;
+}
+
+#game-area {
+    width: 900px;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}
+
+.center {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(253, 242, 127);
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#scoresheet {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    width: auto;
+}
+
+tr, td {
+    text-align: center;
+    height: 30px;
+}
+
+th {
+    background-color: rgba(171, 23, 73, 0.85);
+    border-bottom-width: 1px;
 }
